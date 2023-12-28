@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作业</title>
+  <style>
+    @font-face {
+      font-family: "xiangxixinxi";
+      src:
+        url("xiangxixinxi.ttf") format("truetype");
+    }
+
+
+    @font-face {
+      font-family: "SanJiLiShuJianTi";
+      src:
+        url("SanJiLiShuJianTi-Regular-2.ttf") format("truetype");
+    }
+
+
+    @font-face {
+      font-family: "hx";
+      src:
+        url("hxzt.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "AaBanRuoKaiShu";
+      src:
+        url("AaBanRuoKaiShu.ttf") format("truetype");
+    }
+
+
+    body {
+      background-image: url("yongzuobeijing.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* * {
+      border: 1px solid black;
+    } */
+
+    .shuxingjuzhong {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: AaBanRuoKaiShu;
+      font-size: xx-large;
+      /* border-width: 0px 0px 7px 0px; */
+      box-shadow: 0px 3px 5px 1px rgba(175, 168, 168, 0.7);
+      margin-bottom: 3px;
+    }
+
+
+
+
+    .box {
+      position: relative;
+    }
+
+    .box:before {
+      content: "";
+      background-image: url("miaoshuqu.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 50% 50% 0;
+      /* 使伪元素继承主元素的 border-radius */
+    }
+
+    .miaoshuqu {
+      background-image: url("miaoshuqu.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bj {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+    }
+
+
+    .renxiangqutu {
+      background-image: url("renwubeijing4.png");
+
+    }
+
+
+    .outer-box {
+      position: relative;
+      /* 为了使内部盒子可以相对于外部盒子定位 */
+      width: 100%;
+      height: 100%;
+    }
+
+    .inner-box {
+      width: 88%;
+      /* 内部盒子的宽度是外部盒子宽度的50% */
+      height: 90%;
+      /* 内部盒子的高度是外部盒子高度的50% */
+      background-image: url("zhutuqu.png");
+      position: absolute;
+      /* 绝对定位，相对于外部盒子 */
+      top: 5%;
+      left: 6%;
+
+      border-radius: 1% .beijingchicun {
+        background-size: 100% 100%;
+      }
+  </style>
+</head>
+
+<body>
+  <!-- 头部图片区 -->
+  <div style="
+        flex: 1;
+        background-image: url('changtutoubu.png');
+        background-size: 100% 100%;
+        display: flex;
+      ">
+    <div style="flex: 4"></div>
+    <!-- 文字1 -->
+    <div style="
+          flex: 1;
+          writing-mode: vertical-rl;
+          text-align: center;
+          font-family: hx, sans-serif;
+          font-size: x-large;
+        ">
+      平 凡 半 生
+    </div>
+    <!-- 文字2 -->
+    <div style="
+          flex: 1;
+          writing-mode: vertical-rl;
+          text-align: center;
+          font-family: hx, sans-serif;
+          font-size: x-large;
+        ">
+      无 话 可 说
+    </div>
+    <div style="flex: 10"></div>
+  </div>
+  <!-- 主区域 -->
+  <div style="flex: 4" class="outer-box">
+    <!-- 有内容区域 -->
+    <div class="inner-box bj" style="display: flex;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 10px #000000;
+      ">
+      <!-- 人像区 -->
+      <div style="flex: 7;display: flex;flex-direction: column;
+" class="renxiangqutu bj">
+        <!-- 主人物区 -->
+        <div style="flex: 15;display: flex;">
+          <!-- 左列 -->
+          <div style="flex:2;position: relative;">
+            <div style="position: absolute;width: 50%;height: 13%;top: 18%; left: 25%;
+        background-image: url(chongci.jpg);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+            <div style="position: absolute;width: 50%;height: 13%;top: 36%; left: 25%;
+        background-image: url(R-C.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+            <div style="position: absolute;width: 50%;height: 13%;top: 54%; left: 25%;background-image: url(jiahao.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+            <div style="position: absolute;width: 50%;height: 13%;top: 72%; left: 25%;background-image: url(jiahao.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+          </div>
+          <!-- 中人 -->
+          <div style="flex:4;background-image: url('yongzuorenxiang.png');" class="bj"></div>
+          <!-- 右列 -->
+          <div style="flex:2;position: relative;">
+            <div style="position: absolute;width: 50%;height: 13%;top: 18%; left: 25%;background-image: url(jiahao.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+            <div style="position: absolute;width: 50%;height: 13%;top: 36%; left: 25%;background-image: url(jiahao.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+            <div style="position: absolute;width: 50%;height: 13%;top: 54%; left: 25%;background-image: url(jiahao.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+            <div style="position: absolute;width: 50%;height: 13%;top: 72%; left: 25%;background-image: url(jiahao.png);border-radius: 10px;      box-shadow: 0px 3px 5px 5px rgba(175, 168, 168, 0.7);
+" class="bj"></div>
+
+          </div>
+        </div>
+        <!-- 名称区 -->
+        <div style="flex: 2.5;position: relative;">
+          <!-- 名称中心区 -->
+          <div style="position: absolute;
+        width: 60%;height: 60%;left: 20%;display: flex;font-family:xiangxixinxi;
+        /* background-color: rgba(78, 77, 68, 0.8); */
+        ">
+            <!-- 左球 -->
+            <div style="flex: 1;border-radius: 50%;display: flex;
+        align-items: center;justify-content: center;font-size:xxx-large;
+        background-color: rgba(175, 219, 198, 0.8);
+         box-shadow: 0px 3px 5px 1px rgba(245, 241, 241, 0.7);
+         border: #868484 3px solid;
+
+        ">名</div>
+            <!-- 上海漂移 -->
+            <div style="flex: 5;display: flex;
+        align-items: center;justify-content: center;font-size:xx-large;
+        background-color: rgba(156, 161, 159, 0.8);border-radius: 30px;
+        ">上海漂移</div>
+            <!-- 右球 -->
+            <div style="flex: 1;border-radius: 50%;display: flex;
+        align-items: center;justify-content: center;font-size:xxx-large;
+        background-color: rgba(219, 175, 175, 0.8);
+        box-shadow: 0px 3px 5px 1px rgba(241, 238, 238, 0.7);
+        border: #868484 3px solid;
+
+
+        ">装</div>
+          </div>
+        </div>
+      </div>
+      <!-- 描述区加弧形修饰区 -->
+      <div style="flex: 9;display: flex;">
+        <!-- 描述区 -->
+        <div style="flex: 6;
+        " class="miaoshuqu outer-box">
+          <!-- 称号区 -->
+          <div style="position: absolute;
+        width: 50%;height: 12%;
+        top: 9.5%;left: 36%;
+        display: flex;
+                font-family:SanJiLiShuJianTi ;
+
+        ">
+            <!-- 称号 -->
+            <div style="flex: 1;display: flex; font-size:xxx-large;color: rgb(247, 226, 198);">
+              <!-- 称 -->
+              <div style="flex: 1;
+     display: flex;  
+  align-items:flex-start;
+  justify-content:right;  ">称</div>
+              <!-- 号 -->
+              <div style="flex: 1;display: flex;  
+  align-items:end;
+  justify-content:left;">号</div>
+            </div>
+            <!-- 王者骑士 -->
+            <div style="flex: 2;
+        font-size: xx-large;
+                display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color: #423f3f
+"> 虚空守护者</div>
+          </div>
+          <!-- 等级和经验盒子 -->
+          <div style="position: absolute;
+        width: 68.7%;height: 18%;
+        top: 24.7%;left: 25%;display: flex;flex-direction: column;
+        font-family:AaBanRuoKaiShu ;font-size:larger;
+        ">
+            <!-- 等级盒子 -->
+            <div style="flex: 2;display:flex;flex-direction: column;">
+              <!-- 一行 -->
+              <div style="display: flex;flex: 1;">
+                <div style="flex: 1;">等级： 准新手</div>
+                <div style="flex: 1;">修为： 九年义务教育已修</div>
+              </div>
+              <!-- 二行 -->
+              <div style="display: flex;flex: 1;">
+                <div style="flex: 1;">职业： 送外卖</div>
+                <div style="flex: 1;">帮会： 正想办法加</div>
+              </div>
+            </div>
+            <!-- 经验盒子 -->
+            <div style="flex: 1;display: flex;">
+              <!-- 经验 -->
+              <div>经验：</div>
+              <!-- 经验条区 -->
+              <div style="display: flex;flex-direction: column;flex: 1;">
+                <!-- 经验条 -->
+                <div style="flex: 1;display: flex;">
+                  <!-- 有颜色条 -->
+                  <div style="flex: 5;background-color: darkorange;"></div>
+                  <!-- 无颜色条 -->
+                  <div style="flex: 4;background-color: darkgray;"></div>
+                  <!-- 留白条 -->
+                  <div style="flex: 1;"></div>
+                </div>
+                <!-- 空白区 -->
+                <div style="flex: 1;"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 数值区 -->
+          <div style="position: absolute;
+        width: 80%;height: 28.5%;
+        top: 49.5%;left: 19.5%;display: flex;flex-direction: column;
+        font-family:AaBanRuoKaiShu ;font-size:larger;border-radius: 30px;
+        background-color: rgba(105, 101, 75, 0.1);text-align: center;text-align: left;
+                box-shadow: 0px 3px 5px 1px rgba(61, 63, 58, 0.7);
+
+        ">
+            <!-- 一行空 -->
+            <div style="flex: 1;"></div>
+            <!-- 二行 -->
+            <div style="flex: 1;display: flex;">
+              <!-- 球和力量 -->
+              <div style="flex: 1;display: flex;">
+                <!-- 球 -->
+                <div style="flex: 1;position: relative;">
+                  <!-- 实球 -->
+                  <div style="position: absolute;width: 30%;height: 50%;top:5%;left:50%;
+              background-color:red;
+              border-radius: 50%;
+              "></div>
+                </div>
+                <!-- 力量 -->
+                <div style="flex: 3;">力量： 粗活干得</div>
+              </div>
+              <!-- 球和物防 -->
+              <div style="flex: 1;display: flex;">
+                <!-- 球 -->
+                <div style="flex: 1;position: relative;">
+                  <!-- 实球 -->
+                  <div style="position: absolute;width: 30%;height: 50%;top:5%;left:50%;
+              background-color:brown;
+              border-radius: 50%;
+              "></div>
+                </div>
+                <!-- 力量 -->
+                <div style="flex: 3;">物防： 1170</div>
+
+              </div>
+
+            </div>
+            <!-- 三行 -->
+            <div style="flex: 1;display: flex;">
+              <!-- 球和智力 -->
+              <div style="flex: 1;display: flex;">
+                <!-- 球 -->
+                <div style="flex: 1;position: relative;">
+                  <!-- 实球 -->
+                  <div style="position: absolute;width: 30%;height: 50%;top:5%;left:50%;
+              background-color:cyan;
+              border-radius: 50%;
+              "></div>
+                </div>
+                <!-- 力量 -->
+                <div style="flex: 3;">智力： 很一般</div>
+
+              </div>
+              <!-- 球和魔防 -->
+              <div style="flex: 1;display: flex;">
+                <!-- 球 -->
+                <div style="flex: 1;position: relative;">
+                  <!-- 实球 -->
+                  <div style="position: absolute;width: 30%;height: 50%;top:5%;left:50%;
+              background-color:rgb(0, 255, 64);
+              border-radius: 50%;
+              "></div>
+                </div>
+                <!-- 力量 -->
+                <div style="flex: 3;">魔防： 1650</div>
+
+              </div>
+
+            </div>
+            <!-- 四行 -->
+            <div style="flex: 1;display: flex;">
+              <!-- 球和精神 -->
+              <div style="flex: 1;display: flex;">
+                <!-- 球 -->
+                <div style="flex: 1;position: relative;">
+                  <!-- 实球 -->
+                  <div style="position: absolute;width: 30%;height: 50%;top:5%;left:50%;
+              background-color:rgb(132, 0, 255);
+              border-radius: 50%;
+              "></div>
+                </div>
+                <!-- 力量 -->
+                <div style="flex: 3;">精神： 挺颓的</div>
+
+              </div>
+              <!-- 球和破防 -->
+              <div style="flex: 1;display: flex;">
+                <!-- 球 -->
+                <div style="flex: 1;position: relative;">
+                  <!-- 实球 -->
+                  <div style="position: absolute;width: 30%;height: 50%;top:5%;left:50%;
+              background-color:rgb(255, 153, 0);
+              border-radius: 50%;
+              "></div>
+                </div>
+                <!-- 力量 -->
+                <div style="flex: 3;">破防： 1280</div>
+
+              </div>
+
+            </div>
+            <!-- 五行空 -->
+            <div style="flex: 1;"></div>
+          </div>
+          <!-- 详细信息标 -->
+          <div style="position: absolute;
+        width: 30%;height: 8.6%;
+        top: 86%;left: 45%;
+        font-family: xiangxixinxi;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30%;
+        background-color: rgba(241, 206, 7, 0.2);
+        color: rgb(222, 226, 230);
+        box-shadow: 0px 3px 5px 1px rgba(61, 63, 58, 0.7);
+
+        ">详细信息</div>
+        </div>
+        <!-- 弧形区 -->
+        <div style=" flex: 1; " class=" box">
+          <!-- 伪盒子 -->
+          <div class="box-before bj"></div>
+        </div>
+      </div>
+      <!-- 属性格子 -->
+      <div style="flex: 2 ;display: flex; flex-direction: column;
+       color: #868484;
+      ">
+        <div style="flex: 1; border-width: 0px 0px 7px 0px;
+"></div>
+        <div style="flex: 1; 
+        background-color: rgba(236, 216, 97, 0.2);
+        color: aliceblue;
+        " class="shuxingjuzhong">属性</div>
+        <div style="flex: 1;" class="shuxingjuzhong">背包</div>
+        <div style="flex: 1;" class="shuxingjuzhong">技能</div>
+        <div style="flex: 1;" class="shuxingjuzhong">声望</div>
+        <div style="flex: 1;"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
